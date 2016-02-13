@@ -16,27 +16,6 @@ jQuery(document).ready(function () {
     });
 
 
-    var $footer_widget = jQuery("#footer-widgets .footer-widget");
-    if ($footer_widget.length) {
-        $footer_widget.each(function (index, domEle) {
-            if ((index + 1) % 4 == 0) jQuery(domEle).addClass("last").after("<div class='clear'></div>");
-        });
-    }
-
-    et_search_bar();
-
-    function et_search_bar() {
-        var $searchform = jQuery('#social div#search-form'),
-			$searchinput = $searchform.find("input#searchinput"),
-			searchvalue = $searchinput.val();
-
-        $searchinput.focus(function () {
-            if (jQuery(this).val() === searchvalue) jQuery(this).val("");
-        }).blur(function () {
-            if (jQuery(this).val() === "") jQuery(this).val(searchvalue);
-        });
-    }
-
     if (disableToptier == 1) jQuery("ul.nav > li > ul").prev("a").attr("href", "#");
 
     var $comment_form = jQuery('form#commentform');

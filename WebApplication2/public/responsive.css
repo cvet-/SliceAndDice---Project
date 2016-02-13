@@ -1,4 +1,4 @@
-﻿/* Browser Resets */
+﻿
 
 .flex-container a:active,
 .flexslider a:active {
@@ -12,11 +12,6 @@
     padding: 0;
     list-style: none;
 }
-
-
-/* FlexSlider Necessary Styles
-*********************************/
-
 .flexslider {
     width: 100%;
     margin: 0;
@@ -27,8 +22,6 @@
     display: none;
 }
 
-
-/* Hide the slides before the JS is loaded. Avoids image jumping */
 
 .flexslider .slides img,
 .post img,
@@ -46,9 +39,6 @@
 .flex-pauseplay span {
     text-transform: capitalize;
 }
-
-
-/* Clearfix for the .slides element */
 
 .slides:after {
     content: ".";
@@ -68,19 +58,11 @@ html[xmlns] .slides {
 }
 
 
-/* No JavaScript Fallback */
-
-
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
 
 .no-js .slides > li:first-child {
     display: block;
 }
 
-
-/* FlexSlider Default Theme
-*********************************/
 
 .flexslider {
     position: relative;
@@ -96,18 +78,11 @@ html[xmlns] .slides {
 }
 
 
-/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
-
 .flex-container {
     zoom: 1;
     position: relative;
 }
 
-
-/* Caption style */
-
-
-/* IE rgba() hack */
 
 .flex-caption {
     background: none;
@@ -414,60 +389,7 @@ video {
         padding: 0px 36px 60px 31px;
         background-position: 518px 0px;
     }
-    .fullwidth .et_pt_gallery_entry {
-        margin: 0 0px 32px 14px;
-    }
-    #et_pt_portfolio_gallery {
-        margin-left: -35px !important;
-    }
-    .et_pt_portfolio_item {
-        margin-left: 25px !important;
-        width: 219px !important;
-    }
-    .et_portfolio_more_icon,
-    .et_portfolio_zoom_icon {
-        top: 50px !important;
-    }
-    .et_portfolio_more_icon {
-        left: 65px !important;
-    }
-    .et_portfolio_zoom_icon {
-        left: 106px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_small {
-        margin-left: -18px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_small .et_pt_portfolio_item {
-        margin-left: 11px !important;
-        width: 132px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_small .et_portfolio_more_icon,
-    #et_pt_portfolio_gallery.et_portfolio_small .et_portfolio_zoom_icon {
-        top: 20px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_small .et_portfolio_more_icon {
-        left: 26px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_small .et_portfolio_zoom_icon {
-        left: 62px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large {
-        margin-left: -20px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_pt_portfolio_item {
-        margin-left: 11px !important;
-        width: 348px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon,
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        top: 99px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon {
-        left: 140px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        left: 178px !important;
-    }
+    
 }
 
 @media only screen and ( max-width: 960px) {
@@ -620,58 +542,7 @@ video {
         float: none !important;
         width: auto !important;
     }
-    #et_pt_portfolio_gallery {
-        margin-left: -34px !important;
-    }
-    .et_pt_portfolio_item {
-        margin-left: 11px !important;
-        width: 143px !important;
-    }
-    .et_portfolio_more_icon,
-    .et_portfolio_zoom_icon {
-        top: 25px !important;
-    }
-    .et_portfolio_more_icon {
-        left: 29px !important;
-    }
-    .et_portfolio_zoom_icon {
-        left: 67px !important;
-    }
-    .et_portfolio_small .et_pt_portfolio_item {
-        width: 410px !important;
-        margin-bottom: 10px;
-    }
-    .et_portfolio_small .et_pt_portfolio_entry {
-        float: left;
-        margin-right: 15px;
-    }
-    .et_portfolio_small .et_portfolio_more_icon,
-    .et_portfolio_small .et_portfolio_zoom_icon {
-        top: 30px !important;
-    }
-    .et_portfolio_small .et_portfolio_more_icon {
-        left: 38px !important;
-    }
-    .et_portfolio_small .et_portfolio_zoom_icon {
-        left: 77px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large {
-        margin-left: 0 !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_pt_portfolio_item {
-        margin-left: 0 !important;
-        width: 404px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon,
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        top: 109px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon {
-        left: 155px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        left: 195px !important;
-    }
+    
 }
 
 @media only screen and ( max-width: 479px) {
@@ -762,37 +633,5 @@ video {
     .et-protected-form p input {
         margin: 0 !important;
     }
-    p.et-registration {
-        margin-top: 35px !important;
-    }
-    .et_pt_gallery_entry {
-        margin-left: 11px !important;
-    }
-    #et_pt_portfolio_gallery,
-    #et_pt_portfolio_gallery.et_portfolio_large {
-        margin-left: -13px !important;
-    }
-    .et_pt_portfolio_item,
-    #et_pt_portfolio_gallery.et_portfolio_large .et_pt_portfolio_item {
-        margin-left: 0 !important;
-        width: 272px !important;
-    }
-    .et_portfolio_more_icon,
-    .et_portfolio_zoom_icon,
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon,
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        top: 68px !important;
-    }
-    .et_portfolio_more_icon,
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon {
-        left: 94px !important;
-    }
-    .et_portfolio_zoom_icon,
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        left: 134px !important;
-    }
-    .entry .et_portfolio_small .et_pt_portfolio_item {
-        width: 264px !important;
-        margin-left: 6px !important;
-    }
+    
 }

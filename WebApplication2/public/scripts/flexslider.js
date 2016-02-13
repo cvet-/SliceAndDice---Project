@@ -52,36 +52,8 @@
             }
         });
 
-        et_mobile_navigation_fix();
-        et_footer_widgets_fix();
+        
     }
 
-    function et_mobile_navigation_fix() {
-        var et_left;
-
-        if (containerWidth <= 480) {
-            et_left = (containerWidth - $mobileNavButton.innerWidth()) / 2;
-            if (containerWidth <= 300) {
-                et_left = et_left - 31;
-            } else {
-                et_left = et_left - 52;
-            }
-            $cloned_nav.css('left', '-' + et_left + 'px');
-        }
-    }
-
-    function et_footer_widgets_fix() {
-        var $footer_widget = jQuery("#footer-widgets .footer-widget"),
-			footer_columns_num;
-
-        footer_columns_num = containerWidth <= 768 ? 3 : 4;
-
-        if ($footer_widget.length) {
-            $footer_widget.removeClass('last').closest('#footer-widgets').find('div.clear').remove();
-
-            $footer_widget.each(function (index, domEle) {
-                if ((index + 1) % footer_columns_num == 0) jQuery(domEle).addClass("last").after("<div class='clear'></div>");
-            });
-        }
-    }
+    
 });
