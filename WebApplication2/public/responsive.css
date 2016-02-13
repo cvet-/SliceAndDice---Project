@@ -611,26 +611,6 @@ video {
     .post-thumbnail {
         display: none;
     }
-    #mobile_menu {
-        width: 240px;
-    }
-    #left-area {
-        width: 244px;
-    }
-    .post p.meta-info {
-        border-bottom: 1px solid #F0F0F0;
-    }
-    .fullwidth #et_pt_gallery {
-        margin-left: 6px;
-    }
-    .et-protected {
-        width: auto !important;
-    }
-    .et-protected-form {
-        background: none !important;
-    }
-    .et-protected-form p input {
-        margin: 0 !important;
-    }
+
     
 }
